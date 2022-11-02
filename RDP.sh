@@ -6,7 +6,7 @@ read -p "Password: " PSWD
 printf '\nPlease insert 6 digits pin\n'
 read -p "Pin": PIN
 printf '\nPlease check https://remotedesktop.google.com/headless And copy the command line of Debian Linux and then paste it\n'
-read -p "Command: " CRP
+ "Command: " CRP="DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0ARtbsJpGMADD5tM-u-crhWtpgotcDj5ouQ48TiffxexPUYUgsGTRhz0xEcMR5qv_9-SNPQ" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname)"
 
 # Add User
 printf "\nCreating User..." >&2

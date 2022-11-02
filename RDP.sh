@@ -61,17 +61,6 @@ printf "\nInstalling Google Chrome" >&2
 printf "\nGoogle Chrome Installed successfully\n" >&2 || 
 printf "\nAn error has occured\n" >&2
 
-# Installing download manager
-printf "\nInstalling Google Chrome" >&2
-{
-  sudo add-apt-repository ppa:plushuang-tw/uget-stable
-  sudo apt-get update
-  sudo apt-get install uget
-  sudo apt install --assume-yes --fix-broken
-} &> /dev/null && 
-printf "\ndownload manager Installed successfully\n" >&2 || 
-printf "\nAn error has occured\n" >&2
-
 # Finalizing
 printf "\nFinalizing" >&2
 {
